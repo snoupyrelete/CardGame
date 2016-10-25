@@ -11,10 +11,13 @@ import UIKit
 
 class PlayingCard: Card
 {
+    private var suit: String
+    private var color: UIColor
+    
     override init()
     {
-        let suit: String
-        let color: UIColor
+//        suit: String()
+//        color: UIColor()
         
     }
 }
