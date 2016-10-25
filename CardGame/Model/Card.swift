@@ -25,4 +25,14 @@ class Card
         let description = "The card is \(isFaceUp)"
         return description
     }
+    
+    func getBackImage() -> UIImage
+    {
+        return backImage
+    }
+    
+    func isUp() -> Bool
+    {
+        return isFaceUp
+    }
 }
