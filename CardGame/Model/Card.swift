@@ -11,7 +11,16 @@ import UIKit
 
 class Card
 {
-    private var backImage: UIImage
+    private var backImage: UIImage {
+        get
+        {
+            return backImage
+        }
+        set
+        {
+            
+        }
+    }
     private var isFaceUp : Bool
     
     init()
