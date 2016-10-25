@@ -7,11 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
-class PlayingCard: Card {
-    override init() {
-//        var suit: String
-//        var color: UIColor
+class PlayingCard: Card
+{
+    override init()
+    {
+        let suit: String
+        let color: UIColor
         
     }
 }

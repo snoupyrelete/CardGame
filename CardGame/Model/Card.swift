@@ -7,9 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
-class Card {
-//    var backImage: UIImage
-//    var isFaceUP : Bool
-    
+class Card
+{
+    init()
+    {
+    var backImage: UIImage
+    var isFaceUP : Bool
+    }
 }
