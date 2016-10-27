@@ -38,9 +38,15 @@ class PlayingCard: Card
     override init()
     {
         super.init()
-        suit = ""
+        suit = String()
         color = UIColor()
         rank = 0
         frontImage = UIImage()
+    }
+    
+    override func toString() -> String
+    {
+        let description = "This PlayingCard has a rank of \(rank), a color of \(color), and is of the \(suit) suit"
+        return description
     }
 }
