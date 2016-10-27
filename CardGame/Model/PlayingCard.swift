@@ -12,11 +12,34 @@ import UIKit
 class PlayingCard: Card
 {
     private var suit: String
-    private var color: UIColor
-    
-    override init()
     {
-        suit = String()
-        color = UIColor()
+        get{return self.suit}
+        set(suit){self.suit = suit}
     }
+    
+    private var color: UIColor
+    {
+        get{return self.color}
+        set(color){self.color = color}
+    }
+    
+    private var rank: Int
+    {
+        get{return self.rank}
+        set(rank){self.rank = rank}
+    }
+    
+    private var frontImage: UIImage
+    {
+        get{return self.frontImage}
+        set(frontImage){self.frontImage = frontImage}
+    }
+    
+//    init()
+//    {
+//        suit = String()
+//        color = UIColor()
+//        rank = Int()
+//        frontImage = UIImage()
+//    }
 }
