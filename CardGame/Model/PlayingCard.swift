@@ -35,11 +35,12 @@ class PlayingCard: Card
         set(frontImage){self.frontImage = frontImage}
     }
     
-//    init()
-//    {
-//        suit = String()
-//        color = UIColor()
-//        rank = Int()
-//        frontImage = UIImage()
-//    }
+    override init()
+    {
+        super.init()
+        suit = ""
+        color = UIColor()
+        rank = 0
+        frontImage = UIImage()
+    }
 }
