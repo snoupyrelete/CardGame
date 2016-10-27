@@ -11,9 +11,13 @@ import Foundation
 class Deck
 {
     private var size: Int
-    
-    init(numberOfCards)
     {
-        size = numberOfCards
+        get{return self.size}
+        set(size){self.size = size}
+    }
+    
+    init()
+    {
+        size = Int()
     }
 }
