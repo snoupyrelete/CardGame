@@ -10,7 +10,7 @@ import Foundation
 
 class Deck
 {
-    private var size: Int
+    public var size: Int
     {
         get{return self.size}
         set(size){self.size = size}
