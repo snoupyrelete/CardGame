@@ -11,6 +11,7 @@ import UIKit
 
 class PlayingCard: Card
 {
+    let tempCard = Card()
     private var suit: String
     {
         get{return self.suit}
@@ -46,7 +47,16 @@ class PlayingCard: Card
     
     override func toString() -> String
     {
-        let description = "This PlayingCard has a rank of \(rank), a color of \(color), and is of the \(suit) suit"
+//        let facing: String
+//        if tempCard
+//        {
+//            facing = ""
+//        } else {
+//            facing = ""
+//        }
+        
+        
+        let description = "This PlayingCard has a rank of \(rank), a color of \(color), and is of the \(suit) suit, the back image is ?"
         return description
     }
 }
