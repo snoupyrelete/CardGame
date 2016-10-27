@@ -16,8 +16,7 @@ class PlayingCard: Card
     
     override init()
     {
-//        suit: String()
-//        color: UIColor()
-        
+        suit = String()
+        color = UIColor()
     }
 }
