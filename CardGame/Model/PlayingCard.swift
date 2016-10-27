@@ -47,16 +47,15 @@ class PlayingCard: Card
     
     override func toString() -> String
     {
-//        let facing: String
-//        if tempCard
-//        {
-//            facing = ""
-//        } else {
-//            facing = ""
-//        }
+        let facing: String
+        if super.isFaceUp
+        {
+            facing = "face up"
+        } else {
+            facing = "face down"
+        }
         
-        
-        let description = "This PlayingCard has a rank of \(rank), a color of \(color), and is of the \(suit) suit, the back image is ?"
+        let description = "This PlayingCard has a rank of \(rank), a color of \(color), and is of the \(suit) suit, it is \(facing)"
         return description
     }
 }
