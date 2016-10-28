@@ -15,11 +15,9 @@ class CardGameController: UIViewController
     @IBOutlet weak var cardImage: UIImageView!
     override func viewDidLoad()
     {
+        print(deck.cards.count)
         cardImage.image = UIImage(named: "c01")
-        for 0..<deck.size
-        {
-            
-        }
+       
     }
  
 }

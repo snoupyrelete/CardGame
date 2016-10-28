@@ -16,8 +16,24 @@ class Deck
         set(size){self.size = size}
     }
     
+    public var cards: [Card]
+    {
+        get{return self.cards}
+        set(cards){self.cards = cards}
+    }
     init()
     {
-        size = Int()
+        size = 52
+//        for _ in 0..<size
+//        {
+//            cards.append(Card())
+//        }
+        
+    }
+   
+    
+    func shuffle()
+    {
+        
     }
 }
