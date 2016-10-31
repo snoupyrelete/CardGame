@@ -10,17 +10,17 @@ import Foundation
 
 class Deck
 {
-    public var size: Int
+    internal var size: Int
     {
         get{return self.size}
         set(size){self.size = size}
     }
     
-    public var cards: [Card]
-    {
-        get{return self.cards}
-        set(cards){self.cards = cards}
-    }
+//    internal var cards: [Card]
+//    {
+//        get{return self.cards}
+//        set(cards){self.cards = cards}
+//    }
     init()
     {
         size = 52
@@ -32,8 +32,20 @@ class Deck
     }
    
     
-    func shuffle()
+    func shuffle() -> Void
     {
+    
+    }
+    
+    func orderDeck() -> Void
+    {
+    
+    }
+    
+    func checkDeck() -> Bool
+    {
+        let a = false
         
+        return a
     }
 }

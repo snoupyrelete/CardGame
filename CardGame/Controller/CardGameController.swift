@@ -11,13 +11,9 @@ import UIKit
 
 class CardGameController: UIViewController
 {
-    let deck = Deck()
+    //let deck = Deck()
     @IBOutlet weak var cardImage: UIImageView!
     override func viewDidLoad()
     {
-        print(deck.cards.count)
-        cardImage.image = UIImage(named: "c01")
-       
     }
- 
 }
