@@ -10,42 +10,34 @@ import Foundation
 
 class Deck
 {
-    internal var size: Int
-    {
-        get{return self.size}
-        set(size){self.size = size}
-    }
+//    internal var size: Int
+//    {
+//        get{return self.size}
+//        set(size){self.size = size}
+//    }
     
 //    internal var cards: [Card]
 //    {
 //        get{return self.cards}
 //        set(cards){self.cards = cards}
 //    }
-    init()
-    {
-        size = 52
-//        for _ in 0..<size
-//        {
-//            cards.append(Card())
-//        }
-        
-    }
+//    init()
+//    {
+//        size = 52
+////        for _ in 0..<size
+////        {
+////            cards.append(Card())
+////        }
+//        
+//    }
    
     
-    func shuffle() -> Void
-    {
+
     
-    }
-    
-    func orderDeck() -> Void
-    {
-    
-    }
-    
-    func checkDeck() -> Bool
-    {
-        let a = false
-        
-        return a
-    }
+//    func checkDeck() -> Bool
+//    {
+//        let a = false
+//        
+//        return a
+//    }
 }
