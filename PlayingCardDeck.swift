@@ -10,17 +10,22 @@ import Foundation
 
 class PlayingCardDeck: Deck
 {
+    lazy var cards = [PlayingCard]()
     
     override init()
     {
-        
+       // cards = [PlayingCard]
     }
     
+    //Randomize order
     func shuffleDeck() -> Void
     {
         
     }
     
+    /**
+        Puts the deck in order
+    */
     func orderDeck() -> Void
     {
         
