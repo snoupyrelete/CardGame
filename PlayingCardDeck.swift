@@ -14,6 +14,7 @@ class PlayingCardDeck: Deck
     
     override init()
     {
+        super.init()
        // cards = [PlayingCard]
         for suit in PlayingCard.validSuits()
         {

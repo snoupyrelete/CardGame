@@ -12,25 +12,26 @@ import UIKit
 class PlayingCard: Card
 {
     let tempCard = Card()
-    private var suit: String
+    
+    internal var suit: String
     {
         get{return self.suit}
         set(suit){self.suit = suit}
     }
     
-    private var color: UIColor
+    internal var color: UIColor
     {
         get{return self.color}
         set(color){self.color = color}
     }
     
-    private var rank: Int
+    internal var rank: Int
     {
         get{return self.rank}
         set(rank){self.rank = rank}
     }
     
-    private var frontImage: UIImage
+    internal var frontImage: UIImage
     {
         get{return self.frontImage}
         set(frontImage){self.frontImage = frontImage}
@@ -60,7 +61,7 @@ class PlayingCard: Card
     override func toString() -> String
     {
         let facing: String
-        if super.isFaceUp
+        if self.isFaceUp
         {
             facing = "face up"
         } else {
@@ -82,6 +83,11 @@ class PlayingCard: Card
     class func validSuits() -> [String]
     {
         return ["❤️","♠️","♦️","♣️"]
+    }
+    
+    class func maxRank() -> Int
+    {
+        return validRanks().count - 1
     }
     
     
