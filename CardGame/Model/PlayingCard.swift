@@ -71,7 +71,8 @@ class PlayingCard: Card
         return description
     }
     
-    // Class func same as static in Java, don't need to make an instance.
+    // 'class' func same as static in Java, don't need to make an instance.
+    // This method is visible without creating an instance of the class in question.
     
     class func validRanks() -> [String]
     {

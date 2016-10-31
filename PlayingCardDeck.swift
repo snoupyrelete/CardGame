@@ -15,12 +15,24 @@ class PlayingCardDeck: Deck
     override init()
     {
        // cards = [PlayingCard]
+        for suit in PlayingCard.validSuits()
+        {
+            for rank in PlayingCard.validRanks()
+            {
+                //cards.append(PlayingCard(withRank: rank, ofSuit: suit))
+            }
+        }
     }
     
-    //Randomize order
+    /**
+        Shuffles the deck
+    */
     func shuffleDeck() -> Void
     {
-        
+        for card in cards
+        {
+            
+        }
     }
     
     /**
@@ -28,7 +40,10 @@ class PlayingCardDeck: Deck
     */
     func orderDeck() -> Void
     {
-        
+        for card in cards
+        {
+            
+        }
     }
 
 }
