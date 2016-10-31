@@ -15,6 +15,7 @@ class CardGameController: UIViewController
     @IBOutlet weak var cardImage: UIImageView!
     override func viewDidLoad()
     {
-       //var x = PlayingCardDeck()
+        var x = PlayingCardDeck()
+        print(x.cards)
     }
 }
