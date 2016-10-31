@@ -17,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADf-U5-8Zy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ADf-U5-8Zy">
                                 <rect key="frame" x="208" y="71" width="127" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="V4e-vL-u0P"/>
+                                    <constraint firstAttribute="height" constant="178" id="WOi-MT-Dph"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbg-Gc-JpK">
                                 <rect key="frame" x="75" y="411" width="450" height="21"/>
@@ -28,6 +32,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ADf-U5-8Zy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="LAx-Ic-8d2"/>
+                            <constraint firstItem="ADf-U5-8Zy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="208" id="eZZ-oE-LFY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cardImage" destination="ADf-U5-8Zy" id="0Ev-k7-sh1"/>
