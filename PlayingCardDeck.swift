@@ -15,14 +15,15 @@ class PlayingCardDeck: Deck
     override init()
     {
         super.init()
-       // cards = [PlayingCard]
+       
         for suit in PlayingCard.validSuits()
         {
-            for rank in PlayingCard.validRanks()
+            for index in 1...PlayingCard.maxRank()
             {
-                //cards.append(PlayingCard(withRank: rank, ofSuit: suit))
+                self.cards.append(PlayingCard(withRank: index, ofSuit: suit))
             }
         }
+        
     }
     
     /**
