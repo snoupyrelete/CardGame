@@ -70,4 +70,18 @@ class PlayingCard: Card
         let description = "This PlayingCard has a rank of \(rank), a color of \(color), and is of the \(suit) suit, it is \(facing)"
         return description
     }
+    
+    // Class func same as static in Java, don't need to make an instance.
+    
+    class func validRanks() -> [String]
+    {
+        return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
+    
+    class func validSuits() -> [String]
+    {
+        return ["❤️","♠️","♦️","♣️"]
+    }
+    
+    
 }
