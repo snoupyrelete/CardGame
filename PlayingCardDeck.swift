@@ -18,9 +18,9 @@ class PlayingCardDeck: Deck
        
         for suit in PlayingCard.validSuits()
         {
-            for index in 1...PlayingCard.maxRank()
+            for rank in 1...PlayingCard.maxRank()
             {
-                self.cards.append(PlayingCard(withRank: index, ofSuit: suit))
+                self.cards.append(PlayingCard(withRank: rank, ofSuit: suit))
             }
         }
         
