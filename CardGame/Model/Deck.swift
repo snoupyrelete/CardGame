@@ -10,6 +10,8 @@ import Foundation
 
 class Deck
 {
+    lazy var cards = [PlayingCard]()
+
 //    internal var size: Int
 
 //    internal var cards: [Card]
@@ -33,4 +35,24 @@ class Deck
 //        
 //        return a
 //    }
+    
+    /**
+    Shuffles the deck
+    */
+    func shuffleDeck() -> Void
+    {
+        for card in cards
+        {
+            
+        }
+    }
+    
+    /**
+    Cuts the deck
+    */
+    func cutDeck() -> Void
+    {
+        
+    }
+    
 }

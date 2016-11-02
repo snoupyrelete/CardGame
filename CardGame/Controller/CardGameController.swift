@@ -21,6 +21,8 @@ class CardGameController: UIViewController
             print(x.cards[i].rank)
             print(x.cards[i].suit)
         }
+        print("-------")
+        print (x.cards.count)
     }
     
 }
