@@ -16,6 +16,11 @@ class CardGameController: UIViewController
     override func viewDidLoad()
     {
         var x = PlayingCardDeck()
-        print(x.cards)
+        for (var i = 0; i < x.cards.count; i++)
+        {
+            print(x.cards[i].rank)
+            print(x.cards[i].suit)
+        }
     }
+    
 }
