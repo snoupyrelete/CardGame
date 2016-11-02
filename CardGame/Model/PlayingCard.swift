@@ -14,48 +14,27 @@ class PlayingCard: Card
     let tempCard = Card()
     
     internal var suit: String
-    {
-        get{return self.suit}
-        set(suit){self.suit = suit}
-    }
-    
     internal var color: UIColor
-    {
-        get{return self.color}
-        set(color){self.color = color}
-    }
-    
     internal var rank: Int
-    {
-        get{return self.rank}
-        set(rank){self.rank = rank}
-    }
-    
     internal var frontImage: UIImage
-    {
-        get{return self.frontImage}
-        set(frontImage){self.frontImage = frontImage}
-    }
     
     override init()
     {
-        super.init()
-        
         suit = String()
         color = UIColor.redColor()
         rank = 0
         frontImage = UIImage(named: "c01")!
+        super.init()
     }
     
     init(withRank: Int, ofSuit: String)
     {
-        super.init()
+        
         suit = ofSuit
         color = UIColor.redColor()
         rank = withRank
         frontImage = UIImage(named: "c01")!
-
-        
+        super.init()
     }
     
     override func toString() -> String
