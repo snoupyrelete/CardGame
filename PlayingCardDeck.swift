@@ -10,7 +10,6 @@ import Foundation
 
 class PlayingCardDeck: Deck
 {
-        
     override init()
     {
         super.init()

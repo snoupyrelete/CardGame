@@ -10,7 +10,7 @@ import Foundation
 
 class Deck
 {
-    lazy var cards = [PlayingCard]()
+    lazy var cards = [Card]()
 
 //    internal var size: Int
 
