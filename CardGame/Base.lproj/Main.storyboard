@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Card Game Controller-->
@@ -26,15 +27,31 @@
                                 <state key="normal" title="Button" backgroundImage="cardback">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="cardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MA4-BA-9gy"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCQ-Q1-kYM">
+                                <rect key="frame" x="20" y="47" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wYJ-qb-HGn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="1mT-kR-4d3"/>
+                            <constraint firstItem="gCQ-Q1-kYM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4GH-fA-Gcu"/>
                             <constraint firstItem="wYJ-qb-HGn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Axw-FE-2UA"/>
+                            <constraint firstItem="gCQ-Q1-kYM" firstAttribute="centerX" secondItem="wYJ-qb-HGn" secondAttribute="centerX" id="R6g-xG-4j1"/>
                             <constraint firstItem="wYJ-qb-HGn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="34" id="dED-b1-T9n"/>
+                            <constraint firstItem="wYJ-qb-HGn" firstAttribute="top" secondItem="gCQ-Q1-kYM" secondAttribute="bottom" constant="26" id="may-O9-Mgq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardButton" destination="wYJ-qb-HGn" id="QuG-3i-AV3"/>
+                        <outlet property="cardLabel" destination="gCQ-Q1-kYM" id="cv7-J4-QlO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

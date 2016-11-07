@@ -11,32 +11,36 @@ import UIKit
 
 class CardGameController: UIViewController
 {
-    //let deck = Deck()
-    var cardCounter = 0
-    @IBOutlet weak var cardImage: UIImageView!
-    @IBOutlet weak var posInDeck: UILabel!
-
-    @IBAction func switchCard(sender: AnyObject)
+    
+    private lazy var clickCount = Int()
+    private lazy var newDeck = PlayingCardDeck()
+    
+    @IBOutlet weak var cardLabel: UILabel!
+    @IBOutlet weak var cardButton: UIButton!
+    @IBAction func cardButtonPressed(sender: AnyObject)
     {
-        cardCounter += 1
-        cardImage.image = UIImage(named: "c01")!
-        posInDeck.text = ""
+        clickCount += 1
+        print(clickCount)
+        cardLabel.text = String(clickCount)
+        //cardButton.backgroundImageForState(.Normal) = UIImage(named: "c02")
+        cardButton.imageView?.image = UIImage(named: "c02")
     }
+
     
 
     
     override func viewDidLoad()
     {
-        let x = PlayingCardDeck()
-        let y = x.cards as! [PlayingCard]
         
-        for (var i = 0; i < x.cards.count; i++)
+        let y = newDeck.cards as! [PlayingCard]
+        
+        for (var i = 0; i < newDeck.cards.count; i++)
         {
             print(y[i].rank)
             print(y[i].suit)
         }
         
         print("-------")
-        print (x.cards.count)
+        print (newDeck.cards.count)
     }
 }
