@@ -41,10 +41,14 @@ class Deck
     */
     func shuffleDeck() -> Void
     {
-        for card in cards
+        var tempDeck = [Card]()
+        while cards.count > 0
         {
-            
+            let randomIndex = Int(arc4random() % UInt32(cards.count))
+            let removeCard = cards.removeAtIndex(randomIndex)
+            tempDeck.append(removeCard)
         }
+        cards = tempDeck
     }
     
     /**

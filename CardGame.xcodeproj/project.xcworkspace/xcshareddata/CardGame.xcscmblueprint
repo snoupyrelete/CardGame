@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7BED45C15FF7E7CE1C17A7712541B7486F4A718C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7BED45C15FF7E7CE1C17A7712541B7486F4A718C" : 9223372036854775807,
+    "29156087187AB7831C502DCF0FD4FC640261AA50" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3062F945-A2D8-4049-A642-E0EF774B3C0C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7BED45C15FF7E7CE1C17A7712541B7486F4A718C" : "CardGame\/",
+    "29156087187AB7831C502DCF0FD4FC640261AA50" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CardGame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CardGame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/snoupyrelete\/jsonNewsPracticeProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "29156087187AB7831C502DCF0FD4FC640261AA50"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/snoupyrelete\/CardGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7BED45C15FF7E7CE1C17A7712541B7486F4A718C"
+    }
+  ]
+}

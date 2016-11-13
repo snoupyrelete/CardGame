@@ -30,7 +30,7 @@ class CardGameController: UIViewController
         let x = PlayingCardDeck()
         let y = x.cards as! [PlayingCard]
         
-        for (var i = 0; i < x.cards.count; i++)
+        for (var i = 0; i < x.cards.count; i += 1)
         {
             print(y[i].rank)
             print(y[i].suit)
