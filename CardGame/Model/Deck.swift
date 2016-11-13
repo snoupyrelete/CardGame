@@ -58,5 +58,31 @@ class Deck
     {
         
     }
+    /**
+    Draws from the top of the deck
+     */
+    func drawCard() -> Card!
+    {
+        if cards.count > 0
+        {
+            return cards.removeAtIndex(0)
+        }
+        else
+        {
+            return nil
+        }
+        
+//        var drawnCard = Card()
+//        return drawnCard
+        
+    }
+    /**
+    Draws a random card from the deck
+    */
+    func drawRandomCard() -> Card!
+    {
+        var drawnRandomCard = Card()
+        return drawnRandomCard
+    }
     
 }
