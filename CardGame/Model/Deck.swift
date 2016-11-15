@@ -11,31 +11,6 @@ import Foundation
 class Deck
 {
     lazy var cards = [Card]()
-
-//    internal var size: Int
-
-//    internal var cards: [Card]
-
-//    init()
-//    {
-//        size = 52
-////        for _ in 0..<size
-////        {
-////            cards.append(Card())
-////        }
-//        
-//    }
-   
-    
-
-    
-//    func checkDeck() -> Bool
-//    {
-//        let a = false
-//        
-//        return a
-//    }
-    
     /**
     Shuffles the deck
     */
