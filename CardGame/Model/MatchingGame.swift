@@ -18,20 +18,20 @@ class MatchingGame
     private var hand = [PlayingCard]()
     private var matches = [PlayingCard]()
     
-    func checkMatch(var hand: [PlayingCard]) -> Bool
-    {
-        for outerIndex in 0..<hand.count
-        {
-            for innerIndex in 0..<hand.count
-            {
-                if hand[outerIndex].rank == hand[innerIndex].rank && outerIndex != innerIndex
-                {
-                    matches.append(hand[outerIndex])
-                    matches.append(hand[innerIndex])
-                    //hand.removeAtIndex(innerIndex)
-                    //hand.removeAtIndex(outerIndex)
-                }
-            }
-        }
-    }
+//    func checkMatch(var hand: [PlayingCard]) -> Bool
+//    {
+//        for outerIndex in 0..<hand.count
+//        {
+//            for innerIndex in 0..<hand.count
+//            {
+//                if hand[outerIndex].rank == hand[innerIndex].rank && outerIndex != innerIndex
+//                {
+//                    matches.append(hand[outerIndex])
+//                    matches.append(hand[innerIndex])
+//                    //hand.removeAtIndex(innerIndex)
+//                    //hand.removeAtIndex(outerIndex)
+//                }
+//            }
+//        }
+//    }
 }
