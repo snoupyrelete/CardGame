@@ -23,7 +23,7 @@ class CardGameController: UIViewController
         print(clickCount)
         cardLabel.text = String(clickCount)
         //cardButton.backgroundImageForState(.Normal) = UIImage(named: "c02")
-        cardButton.imageView?.image = UIImage(named: "c02")
+        //cardButton.imageView?.image = UIImage(named: "c02")
     }
 
     
