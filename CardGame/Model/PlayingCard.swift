@@ -16,14 +16,12 @@ class PlayingCard: Card
     internal var suit: String
     internal var color: UIColor
     internal var rank: Int
-    internal var frontImage: UIImage
     
     override init()
     {
         suit = String()
         color = UIColor.redColor()
         rank = 0
-        frontImage = UIImage(named: "c01")!
         super.init()
     }
     
@@ -33,7 +31,6 @@ class PlayingCard: Card
         suit = ofSuit
         color = UIColor.redColor()
         rank = withRank
-        frontImage = UIImage(named: "c01")!
         super.init()
     }
     

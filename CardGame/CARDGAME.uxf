@@ -11,7 +11,7 @@
     </coordinates>
     <panel_attributes>Model::Deck
 -
-Data Members
+- cards : [Card]
 -
 Methods/Constructors
 
