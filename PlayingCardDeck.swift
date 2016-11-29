@@ -14,6 +14,7 @@ class PlayingCardDeck: Deck
     {
         super.init()
        
+        //Written by Mr. Henrichsen
         for suit in PlayingCard.validSuits()
         {
             for rank in 1...PlayingCard.maxRank()
