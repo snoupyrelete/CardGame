@@ -10,30 +10,41 @@ import UIKit
 
 class CardView: UIView
 {
-    internal var isFaceUp: Bool
-    internal var cardBack: UIImageView
+//    internal var isFaceUp: Bool
+//    internal var cardBack: UIImageView
     internal var cardFront: UIImageView
-    internal var topLabel: UILabel
-    internal var bottomLabel: UILabel
-    internal var cornerCurve: CGFloat
-    
+//    internal var topLabel: UILabel
+//    internal var bottomLabel: UILabel
+    //internal var cornerCurve: CGFloat
+
     override init(frame: CGRect)
     {
-        super.init(frame: <#T##CGRect#>)
+        self.cardFront = UIImageView()
+        super.init(frame: frame)
+
     }
     
-    init()
+//    init()
+//    {
+//        isFaceUp = false
+//        cardBack = UIImageView()
+//        cardFront = UIImageView()
+//        topLabel = UILabel()
+//        bottomLabel = UILabel()
+//        cornerCurve = CGFloat(20.00)
+//    }
+    
+    required init?(coder aDecoder: NSCoder)
     {
-        isFaceUp = false
-        cardBack = UIImageView()
-        cardFront = UIImageView()
-        topLabel = UILabel()
-        bottomLabel = UILabel()
-        cornerCurve = CGFloat(20.00)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @IBInspectable internal var cornerCurve : CGFloat = CGFloat(20.0)
+    {
+        didSet
+        {
+            cardFront.layer.cornerRadius = cornerCurve
+        }
     }
     
 

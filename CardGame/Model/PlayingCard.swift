@@ -66,5 +66,11 @@ class PlayingCard: Card
         return validRanks().count - 1
     }
     
+    func getCardData() -> String
+    {
+        let data = "\(PlayingCard.validRanks()[rank]) \(suit)"
+        return data
+    }
+    
     
 }

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,12 +20,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYJ-qb-HGn">
-                                <rect key="frame" x="126" y="94" width="349" height="480"/>
+                                <rect key="frame" x="20" y="152" width="250" height="380"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="349" id="fxo-M5-Uxx"/>
+                                    <constraint firstAttribute="width" secondItem="wYJ-qb-HGn" secondAttribute="height" multiplier="25:38" id="LVU-cU-EZ8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
-                                <state key="normal" title="Button" backgroundImage="cardback">
+                                <state key="normal" title="Card1" backgroundImage="cardback">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -33,24 +34,70 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCQ-Q1-kYM">
                                 <rect key="frame" x="20" y="47" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7ly-u2-B0V"/>
+                                    <constraint firstAttribute="width" constant="560" id="Og5-Rc-do9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uw2-VP-YkA">
+                                <rect key="frame" x="330" y="152" width="250" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Uw2-VP-YkA" secondAttribute="height" multiplier="25:38" id="yvd-1v-JbK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="Card2" backgroundImage="cardback">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6x-c4-gtR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HighScore: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyI-Kf-4TO">
+                                <rect key="frame" x="473" y="47" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3I-Q3-2MJ">
+                                <rect key="frame" x="20" y="47" width="104" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="fZA-YL-0kP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wYJ-qb-HGn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="1mT-kR-4d3"/>
-                            <constraint firstItem="gCQ-Q1-kYM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4GH-fA-Gcu"/>
-                            <constraint firstItem="wYJ-qb-HGn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Axw-FE-2UA"/>
-                            <constraint firstItem="gCQ-Q1-kYM" firstAttribute="centerX" secondItem="wYJ-qb-HGn" secondAttribute="centerX" id="R6g-xG-4j1"/>
-                            <constraint firstItem="wYJ-qb-HGn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="34" id="dED-b1-T9n"/>
-                            <constraint firstItem="wYJ-qb-HGn" firstAttribute="top" secondItem="gCQ-Q1-kYM" secondAttribute="bottom" constant="26" id="may-O9-Mgq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gCQ-Q1-kYM" secondAttribute="leading" id="24h-Rx-Oxl"/>
+                            <constraint firstItem="Uw2-VP-YkA" firstAttribute="top" secondItem="gCQ-Q1-kYM" secondAttribute="bottom" constant="84" id="2kw-xf-gWg"/>
+                            <constraint firstItem="WyI-Kf-4TO" firstAttribute="baseline" secondItem="gCQ-Q1-kYM" secondAttribute="baseline" id="3oT-0M-rG3"/>
+                            <constraint firstItem="WyI-Kf-4TO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="4eV-3H-0Xb"/>
+                            <constraint firstItem="wYJ-qb-HGn" firstAttribute="height" secondItem="Uw2-VP-YkA" secondAttribute="height" id="4ov-Tx-Hy1"/>
+                            <constraint firstItem="wYJ-qb-HGn" firstAttribute="top" secondItem="gCQ-Q1-kYM" secondAttribute="bottom" constant="84" id="6UQ-zN-soI"/>
+                            <constraint firstItem="wYJ-qb-HGn" firstAttribute="width" secondItem="Uw2-VP-YkA" secondAttribute="width" id="6ov-Fc-EdH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wYJ-qb-HGn" secondAttribute="bottom" constant="68" id="9AC-T1-JnG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uw2-VP-YkA" secondAttribute="bottom" constant="68" id="CM3-8Y-IOh"/>
+                            <constraint firstItem="WyI-Kf-4TO" firstAttribute="trailing" secondItem="gCQ-Q1-kYM" secondAttribute="trailing" id="SSU-j0-1eC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uw2-VP-YkA" secondAttribute="trailing" id="hcP-Ks-512"/>
+                            <constraint firstItem="f3I-Q3-2MJ" firstAttribute="leading" secondItem="gCQ-Q1-kYM" secondAttribute="leading" id="oRx-gJ-IXx"/>
+                            <constraint firstItem="gCQ-Q1-kYM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="s30-ds-Kew"/>
+                            <constraint firstItem="gCQ-Q1-kYM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4R-OG-ETk"/>
+                            <constraint firstItem="f3I-Q3-2MJ" firstAttribute="baseline" secondItem="gCQ-Q1-kYM" secondAttribute="baseline" id="sKb-na-9u0"/>
+                            <constraint firstItem="Uw2-VP-YkA" firstAttribute="leading" secondItem="wYJ-qb-HGn" secondAttribute="trailing" constant="60" id="v0p-N0-H5h"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wYJ-qb-HGn" secondAttribute="leading" id="wft-qa-qDp"/>
+                            <constraint firstItem="f3I-Q3-2MJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="zxf-7H-btz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardButton" destination="wYJ-qb-HGn" id="QuG-3i-AV3"/>
                         <outlet property="cardLabel" destination="gCQ-Q1-kYM" id="cv7-J4-QlO"/>
+                        <outlet property="highScoreLabel" destination="WyI-Kf-4TO" id="aca-6f-cDX"/>
+                        <outlet property="scoreLabel" destination="f3I-Q3-2MJ" id="ylR-wc-VIr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
