@@ -11,17 +11,19 @@ import UIKit
 
 class CardGameController: UIViewController
 {
+    @IBOutlet weak var rightCard: UIImageView!
+    @IBOutlet weak var leftCard: UIImageView!
     
     @IBOutlet weak var gameOverLabel: UILabel!
     @IBOutlet weak var highScoreLabel: UILabel!
     @IBOutlet weak var cardLabel: UILabel!
-    @IBOutlet weak var cardButton: UIButton!
+
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var rightCardButton: UIButton!
+
 
 
     private lazy var clickCount = Int()
-        private lazy var newDeck = PlayingCardDeck()
+    private lazy var newDeck = PlayingCardDeck()
     let game = MatchingGame()
     
     var score = 0
@@ -30,40 +32,25 @@ class CardGameController: UIViewController
         {
             scoreLabel.text = "Score: \(String(score))"
         }
+   
     }
-    @IBAction func cardButtonPressed(sender: AnyObject)
+    @IBAction func goButton(sender: AnyObject)
     {
-//        if game.gameOverWithHighScore()
-//        {
-//            
-//        }
+        print("\(game.hand[0].getCardData())---\(game.hand[1].getCardData())")
+
+        //let leftRank = game.hand[0].rank
+
+        let Card1 = PlayingCard(withRank: game.hand[0].rank, ofSuit: game.hand[1].suit)
+        
+        leftCard.image = UIImage(named: "d01")
+        //cardButton.setImage(UIImage(named: "♣️01"), forState: UIControlState.Normal)
+        
         game.playGame()
         score = game.score
         clickCount += 1
         cardLabel.text = String(clickCount)
-        cardButton.setTitle("\(game.hand[0].getCardData())", forState: UIControlState.Normal)
-        rightCardButton.setTitle("\(game.hand[1].getCardData())", forState: UIControlState.Normal)
-
-        
-//        if let leftCard = newDeck.drawRandomCard() as? PlayingCard
-//        {
-//            cardButton.setTitle("\(leftCard.getCardData())", forState: UIControlState.Normal)
-//            //rightCardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
-//
-//        }
-//        else
-//        {
-//            cardLabel.text = "empty - reinit"
-//            newDeck = PlayingCardDeck()
-//        }
-//        if let rightCard = newDeck.drawRandomCard() as? PlayingCard
-//        {
-//            rightCardButton.setTitle("\(rightCard.getCardData())", forState: UIControlState.Normal)
-//            //rightCardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
-//            
-//        }
     }
-
+   
     override func viewDidLoad()
     {
         game.startGame()
