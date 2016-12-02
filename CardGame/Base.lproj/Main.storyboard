@@ -70,6 +70,12 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fJ-yc-YJ4">
+                                <rect key="frame" x="181" y="276" width="239" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -82,7 +88,9 @@
                             <constraint firstItem="wYJ-qb-HGn" firstAttribute="width" secondItem="Uw2-VP-YkA" secondAttribute="width" id="6ov-Fc-EdH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wYJ-qb-HGn" secondAttribute="bottom" constant="68" id="9AC-T1-JnG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uw2-VP-YkA" secondAttribute="bottom" constant="68" id="CM3-8Y-IOh"/>
+                            <constraint firstItem="1fJ-yc-YJ4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KEZ-El-5OL"/>
                             <constraint firstItem="WyI-Kf-4TO" firstAttribute="trailing" secondItem="gCQ-Q1-kYM" secondAttribute="trailing" id="SSU-j0-1eC"/>
+                            <constraint firstItem="1fJ-yc-YJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bub-WQ-zZi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Uw2-VP-YkA" secondAttribute="trailing" id="hcP-Ks-512"/>
                             <constraint firstItem="f3I-Q3-2MJ" firstAttribute="leading" secondItem="gCQ-Q1-kYM" secondAttribute="leading" id="oRx-gJ-IXx"/>
                             <constraint firstItem="gCQ-Q1-kYM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="s30-ds-Kew"/>
@@ -96,7 +104,9 @@
                     <connections>
                         <outlet property="cardButton" destination="wYJ-qb-HGn" id="QuG-3i-AV3"/>
                         <outlet property="cardLabel" destination="gCQ-Q1-kYM" id="cv7-J4-QlO"/>
+                        <outlet property="gameOverLabel" destination="1fJ-yc-YJ4" id="RAx-hW-U3z"/>
                         <outlet property="highScoreLabel" destination="WyI-Kf-4TO" id="aca-6f-cDX"/>
+                        <outlet property="rightCardButton" destination="Uw2-VP-YkA" id="pAV-fM-3XG"/>
                         <outlet property="scoreLabel" destination="f3I-Q3-2MJ" id="ylR-wc-VIr"/>
                     </connections>
                 </viewController>
