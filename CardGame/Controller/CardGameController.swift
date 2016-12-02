@@ -40,9 +40,13 @@ class CardGameController: UIViewController
 
         //let leftRank = game.hand[0].rank
 
-        let Card1 = PlayingCard(withRank: game.hand[0].rank, ofSuit: game.hand[1].suit)
+        let Card1 = PlayingCard(withRank: game.hand[0].rank, ofSuit: game.hand[0].suit)
+        let Card2 = PlayingCard(withRank: game.hand[1].rank, ofSuit: game.hand[1].suit)
+
         
-        leftCard.image = UIImage(named: "d01")
+        leftCard.image = UIImage(named: Card1.getCardData())
+        rightCard.image = UIImage(named: Card2.getCardData())
+        print(Card1.getCardData())
         //cardButton.setImage(UIImage(named: "♣️01"), forState: UIControlState.Normal)
         
         game.playGame()

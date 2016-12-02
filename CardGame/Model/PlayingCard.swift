@@ -53,7 +53,7 @@ class PlayingCard: Card
     
     class func validRanks() -> [String]
     {
-        return ["??","01","02","03","04","05","06","07","08","09","10","11","12","13"]
+        return ["01","02","03","04","05","06","07","08","09","10","11","12","13"]
     }
     
     class func validSuits() -> [String]
@@ -68,7 +68,7 @@ class PlayingCard: Card
     
     func getCardData() -> String
     {
-        let data = " \(suit)\(PlayingCard.validRanks()[rank])"
+        let data = "\(suit)\(PlayingCard.validRanks()[rank])"
         //print(data)
         return data
     }
