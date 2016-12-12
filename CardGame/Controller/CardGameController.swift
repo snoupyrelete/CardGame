@@ -23,8 +23,8 @@ class CardGameController: UIViewController
     @IBOutlet weak var goButton: UIButton!
 
 
-    private lazy var clickCount = Int()
-    private lazy var newDeck = PlayingCardDeck()
+    fileprivate lazy var clickCount = Int()
+    fileprivate lazy var newDeck = PlayingCardDeck()
     let game = MatchingGame()
     
     var score = 0
@@ -35,12 +35,12 @@ class CardGameController: UIViewController
         }
    
     }
-    @IBAction func goButton(sender: AnyObject)
+    @IBAction func goButton(_ sender: AnyObject)
     {
         if game.isGameOver
         {
             gameOverLabel.alpha = 1.0
-            goButton.setTitle("Play Again", forState: .Normal)
+            goButton.setTitle("Play Again", for: UIControlState())
             game.playGame()
             score = game.score
             highScoreLabel.text = String(game.highScore)

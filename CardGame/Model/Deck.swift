@@ -20,7 +20,7 @@ class Deck
         while cards.count > 0
         {
             let randomIndex = Int(arc4random() % UInt32(cards.count))
-            let removeCard = cards.removeAtIndex(randomIndex)
+            let removeCard = cards.remove(at: randomIndex)
             tempDeck.append(removeCard)
         }
         cards = tempDeck
@@ -40,7 +40,7 @@ class Deck
     {
         if cards.count > 0
         {
-            return cards.removeAtIndex(0)
+            return cards.remove(at: 0)
         }
         else
         {
@@ -59,7 +59,7 @@ class Deck
         if cards.count > 0
         {
             let randomIndex = (Int)(arc4random() % (UInt32) (cards.count))
-            return cards.removeAtIndex(randomIndex)
+            return cards.remove(at: randomIndex)
         }
         else
         {
