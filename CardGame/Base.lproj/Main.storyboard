@@ -46,6 +46,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="89" id="rzd-5N-Qd1"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="GO!">
                                     <color key="titleColor" red="0.96099233627319336" green="0.95249342918395996" blue="0.16962809860706329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
