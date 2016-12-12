@@ -20,6 +20,7 @@ class CardGameController: UIViewController
 
     @IBOutlet weak var scoreLabel: UILabel!
 
+    @IBOutlet weak var goButton: UIButton!
 
 
     private lazy var clickCount = Int()
@@ -36,6 +37,15 @@ class CardGameController: UIViewController
     }
     @IBAction func goButton(sender: AnyObject)
     {
+        if game.isGameOver
+        {
+            gameOverLabel.alpha = 1.0
+            goButton.setTitle("Play Again", forState: .Normal)
+            game.playGame()
+            score = game.score
+            highScoreLabel.text = String(game.highScore)
+        }
+
         print("\(game.hand[0].getCardData())---\(game.hand[1].getCardData())")
 
         //let leftRank = game.hand[0].rank
@@ -47,17 +57,19 @@ class CardGameController: UIViewController
         leftCard.image = UIImage(named: Card1.getCardData())
         rightCard.image = UIImage(named: Card2.getCardData())
         print(Card1.getCardData())
-        //cardButton.setImage(UIImage(named: "♣️01"), forState: UIControlState.Normal)
-        
+     
         game.playGame()
         score = game.score
         clickCount += 1
         cardLabel.text = String(clickCount)
+        
     }
    
     override func viewDidLoad()
     {
+        //NSUserDefaults.standardUserDefaults().removeObjectForKey("highScore")
         game.startGame()
         highScoreLabel.text = "High Score: \(String(game.highScore))"
+        gameOverLabel.alpha = 0.0
     }
 }

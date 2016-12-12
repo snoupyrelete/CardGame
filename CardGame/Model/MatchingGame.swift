@@ -15,6 +15,7 @@ class MatchingGame
     internal var hand = [PlayingCard]()
     internal var score: Int
     var highScore: Int
+    var isGameOver: Bool
     private var matches = [PlayingCard]()
     
     init()
@@ -23,6 +24,9 @@ class MatchingGame
         self.hand = [PlayingCard]()
         self.score = 0
         self.highScore = NSUserDefaults.standardUserDefaults().integerForKey("highScore")
+        //self.highScore = 0
+        
+        self.isGameOver = false
     }
     
     func startGame() -> Void
@@ -75,18 +79,18 @@ class MatchingGame
     
     }
     
-    func gameOverWithHighScore() -> Int
+    func gameOverWithHighScore() -> Void
     {
         //let defaults = NSUserDefaults.standardUserDefaults()
         //var highScore = defaults.integerForKey("highScore")
-        
+        isGameOver = true
         if score > highScore
         {
             NSUserDefaults.standardUserDefaults().setInteger(score, forKey: "highScore")
             print("New highscore of \(score)")
         }
         print("Score:\(score)")
-        return highScore
+        self.highScore = score
     }
 
     
