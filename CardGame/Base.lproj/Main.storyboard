@@ -23,12 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCQ-Q1-kYM">
-                                <rect key="frame" x="312" y="47" width="47" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3I-Q3-2MJ">
                                 <rect key="frame" x="16" y="47" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -78,7 +72,6 @@
                         <constraints>
                             <constraint firstItem="fR4-34-761" firstAttribute="width" secondItem="CvB-vk-nqX" secondAttribute="width" id="3op-qg-92h"/>
                             <constraint firstItem="f3I-Q3-2MJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E7O-3e-X4P"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gCQ-Q1-kYM" secondAttribute="trailing" id="IdM-c2-YW4"/>
                             <constraint firstItem="WyI-Kf-4TO" firstAttribute="top" secondItem="f3I-Q3-2MJ" secondAttribute="bottom" constant="18" id="J52-Ci-eak"/>
                             <constraint firstItem="1fJ-yc-YJ4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-136" id="KRO-b5-TAw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kh7-R1-uor" secondAttribute="bottom" constant="52" id="OQB-pE-zkE"/>
@@ -89,14 +82,12 @@
                             <constraint firstItem="kh7-R1-uor" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ijg-Ej-dzu"/>
                             <constraint firstItem="WyI-Kf-4TO" firstAttribute="leading" secondItem="f3I-Q3-2MJ" secondAttribute="leading" id="mcc-PB-zwA"/>
                             <constraint firstItem="1fJ-yc-YJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p4l-aI-s86"/>
-                            <constraint firstItem="gCQ-Q1-kYM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="tAZ-zH-DcW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CvB-vk-nqX" secondAttribute="trailing" id="vgI-aK-kvb"/>
                             <constraint firstItem="1fJ-yc-YJ4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="125" id="wBb-Jb-f91"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fR4-34-761" secondAttribute="bottom" constant="173" id="yZL-I6-3P1"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cardLabel" destination="gCQ-Q1-kYM" id="cv7-J4-QlO"/>
                         <outlet property="gameOverLabel" destination="1fJ-yc-YJ4" id="RAx-hW-U3z"/>
                         <outlet property="goButton" destination="kh7-R1-uor" id="v93-0D-MvC"/>
                         <outlet property="highScoreLabel" destination="WyI-Kf-4TO" id="aca-6f-cDX"/>

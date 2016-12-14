@@ -24,8 +24,6 @@ class MatchingGame
         self.hand = [PlayingCard]()
         self.score = 0
         self.highScore = UserDefaults.standard.integer(forKey: "highScore")
-        //self.highScore = 0
-        
         self.isGameOver = false
     }
     
@@ -63,11 +61,11 @@ class MatchingGame
         {
             if checkMatch()
             {
-                score += 5
+                score += 4
                             }
             else
             {
-                score -= 2
+                score -= 1
             }
             hand.removeAll()
             drawCards()
@@ -93,6 +91,7 @@ class MatchingGame
         self.highScore = score
     }
 
+ 
     
     
     /*
